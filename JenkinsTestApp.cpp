@@ -6,10 +6,11 @@
 int main()
 {
     std::cout << "Hello World!\n";
-    std::cout << "Input: ";
     std::string data;
     getline(std::cin, data);
-    std::cout << "Output: " << data << "\n\n";
 
+    while (!data.compare("\n"))
+    {
+    }
     return 0;
 }
