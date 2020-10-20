@@ -5,12 +5,16 @@
 #include<string>
 int main()
 {
-    std::cout << "Hello World!\n";
-    std::string data;
-    getline(std::cin, data);
+   unsigned int uiCount = 0;
+   char cStr;
 
-    while (!data.compare("\n"))
-    {
-    }
-    return 0;
+   std::cout << "Hello World!\n";
+   std::string data;
+
+   do
+   {
+     cStr = getchar();
+   } while (cStr != '\n');
+   
+   return 0;
 }
